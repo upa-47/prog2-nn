@@ -68,7 +68,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 
 # 学習回数
-n_epochs = 5
+n_epochs = 20
 
 loss_train_history = []
 loss_test_history = []
