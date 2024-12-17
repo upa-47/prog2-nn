@@ -58,14 +58,12 @@ print(f'train accuracy: {acc_train*100:.3f}%')
 acc_test = models.test_accuracy(model, dataloader_test)
 print(f'test accuracy: {acc_test*100:.3f}%')
 
-
 # 損失関数（誤差関数・ロス関数）の選択
 loss_fn = torch.nn.CrossEntropyLoss()
 
 # 最適化の方法の選択
 learning_rate = 0.003  # 学習率
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
-
 
 # 学習回数
 n_epochs = 20
